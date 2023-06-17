@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list_ejs</title>
+</head>
+<body>
+        <h1 style="color: rgb(75, 221, 94);"><%=DayName%></h1>
+        <ol>
+            <!-- <li>Good morning</li>
+            <li>Good after noon</li>
+            <li>Good night</li>
+            <li><%=InputFields%></li> -->
+            <% for(var i=0;i<InputFields.length;i++){ %>
+                <li><%=InputFields[i]%></li>
+            <%}%>
+        </ol>
+        <form action="/" method="post">
+            <label>Enter Here:</label>
+            <input type="text" name="validinput">
+            <button type="submit">Submit</button>
+
+        </form>
+</body>
+</html>
